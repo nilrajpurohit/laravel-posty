@@ -6,6 +6,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\PostLikeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,4 +29,6 @@ Route::post('/login',[LoginController::class,'store']);
 Route::post('/logout',[LogoutController::class,'store'])->name('logout');
 Route::get('/posts',[PostController::class,'index'])->name('posts');
 Route::post('/posts',[PostController::class,'store']);
+Route::post('/posts/{post}/like',[PostLikeController::class,'store'])->name('posts.like');
+Route::delete('/posts/{post}/like',[PostLikeController::class,'destory'])->name('posts.like');
 
