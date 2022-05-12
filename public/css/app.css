@@ -490,6 +490,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-1 {
   margin-right: 0.25rem;
 }
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
 .inline {
   display: inline;
 }
@@ -632,6 +635,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .font-semibold {
   font-weight: 600;
